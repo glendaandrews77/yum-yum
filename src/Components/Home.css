@@ -1,0 +1,18 @@
+.home-container {
+    /* Add any other styles for the home container */
+}
+
+.primary-heading, .primary-text {
+    text-align: center;
+    color: peru
+}
+
+.home-image-container {
+    text-align: center;
+}
+
+.bigger-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width for the image */
+    height: auto;
+}
