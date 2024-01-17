@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsCart2, BsFileX } from "react-icons/bs";
-import { HiMenu , HiOutlineClipboardList } from "react-icons/hi";
+import { HiOutlineChartBar, HiOutlineClipboardList } from "react-icons/hi";
 import {
   Box,
   Drawer,
@@ -58,7 +58,7 @@ const Navbar = () => {
         <button className="primary-button">Booking Now</button>
       </div>
       <div className="nav-bar-menu-container">
-        <HiMenu  onClick={() => setOpenMenu(true)} />
+        <HiOutlineChartBar onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer
         open={openMenu}

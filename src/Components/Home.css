@@ -1,19 +1,15 @@
 .home-container {
-    /* Add any other styles for the home container */
-}
-
-.primary-heading, .primary-text {
-    
-
-}
-npm code .bigger-image
-.home-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     text-align: center;
-    color: peru
-}
-
-.bigger-image {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 600px; /* Set a maximum width for the image */
-    height: auto;
-}
+    height: 100vh;
+    color: red;
+  }
+  
+  .primary-heading {
+    margin-top: 20px; 
+    color:red;
+  }
+  
