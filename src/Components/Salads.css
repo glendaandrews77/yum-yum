@@ -1,0 +1,53 @@
+/* Adjust the styles for the header salad image container */
+.header-salad-container img {
+  max-width: 200px; /* Increase the maximum width for header salad images */
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Add styles for the title */
+.salad-h1 {
+  text-align: center;
+  background-color: rgb(46, 171, 46);
+  color: white;
+  padding: 10px;
+}
+/* Adjust the styles for the salad items container */
+.salads-container {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid #008000;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Adjust the styles for each salad item card */
+.salad-item {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  margin: 10px;
+  border: 3px solid #008000; 
+  border-radius: 8px; 
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Adjust the styles for the salad item images */
+.salad-item img {
+  width: 150%; /* Make the images fill the available width */
+  height: auto;
+}
+
+/* Adjust the styles for the paragraphs and price in each salad item */
+.salad-item p {
+ 
+  text-align: center;
+  margin: 3px 0;
+
+
+}

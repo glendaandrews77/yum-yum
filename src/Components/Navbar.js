@@ -1,6 +1,9 @@
+// Navbar.js
+
 import React, { useState } from "react";
-import { BsCart2, BsFileX } from "react-icons/bs";
-import { HiOutlineChartBar, HiOutlineClipboardList } from "react-icons/hi";
+import { BsCart2 } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
+import "./Navbar.css";
 import {
   Box,
   Drawer,
@@ -12,53 +15,86 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { MdOutlineRestaurantMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(false);
 
   const menuOptions = [
     {
+      text: "Salaoups",
+      // Add any link or use "#" for now
+      link: "/",
+    },
+    {
       text: "Home",
       icon: <HomeIcon />,
+      link: "/home",
     },
     {
-      text: "About",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "Testimonials",
-      icon: <CommentRoundedIcon />,
+      text: "Menu",
+      icon: <MdOutlineRestaurantMenu />,
+      subMenu: [
+        { text: "Salads", link: "/salads" },
+        { text: "Soups", link: "/soups" },
+        { text: "Sandwiches", link: "/sandwiches" },
+        { text: "Dessert", link: "/desserts" },
+        { text: "Drinks", link: "/drinks" },
+      ],
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
+      link: "/contact"
+    },
+    {
+      text: "About",
+      icon: <InfoIcon />,
+      link: "/about"
     },
     {
       text: "Cart",
       icon: <ShoppingCartRoundedIcon />,
+      link: "/about" 
     },
   ];
 
   return (
     <nav>
       <div className="navbar-links-container">
-        {/* add image */}
-      </div>
-      <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
-          <BsCart2 className="nav-cart-icon" />
-        </a>
-        <button className="primary-button">Booking Now</button>
+        {menuOptions.map((item) => (
+          <div key={item.text} className="nav-item">
+            {item.subMenu ? (
+              <div
+                className="nav-dropdown"
+                onMouseEnter={() => setOpenDropdown(true)}
+                onMouseLeave={() => setOpenDropdown(false)}
+              >
+                <a href={item.link || "#"}>{item.text}</a>
+                {openDropdown && (
+                  <div className="dropdown-content">
+                    {item.subMenu.map((subItem) => (
+                      <a key={subItem.text} href={subItem.link}>
+                        {subItem.text}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <a href={item.link || "#"}>{item.text}</a>
+            )}
+          </div>
+        ))}
+        <div className="nav-cart-icon">
+          <BsCart2 />
+        </div>
       </div>
       <div className="nav-bar-menu-container">
-        <HiOutlineChartBar onClick={() => setOpenMenu(true)} />
+        <RxHamburgerMenu onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer
         open={openMenu}

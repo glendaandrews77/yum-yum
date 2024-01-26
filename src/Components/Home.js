@@ -1,35 +1,39 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import Navbar from "./Navbar";
-import { FiArrowRight } from "react-icons/fi";
-
+import { BsTelephoneInboundFill } from "react-icons/bs";
+import './Home.css';
 
 const Home = () => {
     return (
         <div className="home-container">
-            <Navbar />
-            <h1 className="primary-heading">
-                Welcome to Yum-Yum
-                <p>Our Delicious Food is Delivered Hot Fresh and Quickly!</p>
-            </h1>
-                    <p className="primary-text">
-                        Healthy and fresh dishes to satisy you and keep you healthy.
-                    </p>
-            <div className="home-image-container">
-                    <img src="/yum-yum-imgs/salad6.jpg" alt=""/>
+            <div className="home-image-1-container">
+                <img src="/yum-yum-imgs/sns2-header.jpg" alt="header-image" />
             </div>
-            <div className="home-img-container">
-                <div className="home-img-container">
-                    <img src="/yum-yum-imgs/onpshape.webp" alt="" />
+            <div className="below-header">
+                <h1 className="heading">
+                    Home of the Salad Tossing & Soup Slurping
+                </h1>
+            </div>
+            <div id="fresh-ingredients">
+                We Offer a Variety of Fresh Salads & Hot Soups with TLC Every Day.
+            </div>
+            <div className="rest-info">
+                <div className="image-container">
+                    <img src="/yum-yum-imgs/rest-img3.jpg" alt="rest-img" />
                 </div>
-                <div className="home-text-section">
+                <div className="info-container">
+                    <p>Address: 5048 Salad Soup Lane, Virginia Beach, Virginia 23462</p>
+                    <p>Hours: Monday - Friday 10:00 am to 9:00 pm Saturday & Sunday 11:00 am to 8:00 pm</p>
+                    <p>Phone: (757) 478-7966</p>
+                </div>
+            </div>
 
-                    <button className="secondary-button">
-                        Order Now <FiArrowRight />
-                    </button>
-                </div>
+            <div className="home-text-section">
+                <button className="secondary-button">
+                    Call Now <BsTelephoneInboundFill />
+                </button>
+                
             </div>
+            
         </div>
     );
 };

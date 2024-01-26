@@ -1,15 +1,87 @@
+/* Home.css */
+
 .home-container {
+    text-align: center;
+    padding: 0rem;
+    max-width: fit-content;
+    height: fit-content;
+    
+    margin-top: 90px;
+}
+
+.home-image-container {
+    position: relative;
+}
+
+.home-image-container img {
+    width: 100%; 
+    max-width: 70%;
+    height: auto;
+}
+
+.home-image-1-container {
+    width: 100%; 
+    height: 200px;
+    position: relative;
+}
+
+.home-image-1-container img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-right: 10%;
+    padding-left: -15%;
+}
+
+.heading {
+    text-align: center;
+    color: green;
+    font-size: 2rem;
+    text-align: end;
+    margin: auto;
+    padding: 25px;
+    text-decoration: solid;
+}
+
+.primary-text {
+    text-align: end; /* Align text to the right */
+}
+
+.below-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    color: red;
-  }
-  
-  .primary-heading {
-    margin-top: 20px; 
-    color:red;
-  }
-  
+    align-items: flex-end; /* Align items to the right */
+    text-align: end; /* Align text to the right */
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+#fresh-ingredients {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: end; /* Align text to the right */
+}
+
+/* Move text to the right */
+.home-text-section {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Ensure it doesn't overlap with the image */
+.home-text-content {
+    max-width: 70%; /* Adjust as needed */
+}
+
+/* Move image to navbar */
+.navbar-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -1; 
+}

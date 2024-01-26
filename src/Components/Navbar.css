@@ -1,7 +1,116 @@
-.navbar-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px; 
-    background-color: red;
+/* Navbar.css */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.nav {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-links-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  z-index: 1000;
+  background-color: darkolivegreen;
+}
+
+.navbar-links-container a {
+  text-decoration: none;
+  color: white;
+  margin-block: 25%;
+  height: max-content;
+  font-size: 1.2rem;
+  display: flex;
+  height: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links-container a:hover {
+  color: white;
+}
+
+.navbar-links-container a:active {
+  color: tan;
+}
+
+/* Salaoups style */
+.brand-name {
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Dropdown styles */
+.nav-item {
+  position: relative;
+  padding: 0 15px;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 4;
+  left: 0;
+  background-color: darkolivegreen;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
+
+/* CART */
+.nav-cart-icon {
+  color: rgb(231, 217, 211);
+  margin-right: 40px;
+  font-size: 2rem;
+}
+
+.nav-bar-menu-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none;
   }
+
+  .nav-bar-menu-container {
+    display: block;
+  }
+
+  .nav-bar-menu-container svg {
+    font-size: rem;
+    cursor: pointer;
+  }
+}
