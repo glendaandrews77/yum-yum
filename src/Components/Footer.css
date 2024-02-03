@@ -1,0 +1,16 @@
+.footer {
+    
+    width: 100%;
+    background: linear-gradient(to right, rgb(233, 178, 107), green);
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    z-index: 10; /* Ensure it's above other elements */
+  }
+  
+  .info-container p {   
+    color: white;
+    text-align: center;
+}
+  

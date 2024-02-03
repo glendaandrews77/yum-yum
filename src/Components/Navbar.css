@@ -1,4 +1,13 @@
-/* Navbar.css */
+nav {
+  min-height: 70px;
+}
+
+.brand-name {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: orange;
+  margin-left: 20px;
+}
 
 body,
 h1,
@@ -30,7 +39,7 @@ body {
   align-items: center;
   height: 70px;
   z-index: 1000;
-  background-color: darkolivegreen;
+  background: linear-gradient(to right, tan, green);
 }
 
 .navbar-links-container a {
@@ -51,11 +60,13 @@ body {
 .navbar-links-container a:active {
   color: tan;
 }
-
-/* Salaoups style */
+navbar-links-container a:hover {
+  background: linear-gradient(to right, green, tan);
+  color: white; 
+}
+/* Salaoups Style */
 .brand-name {
   font-size: 2rem;
-  color: orange;
   font-weight: bold;
   margin-left: 20px;
 }
@@ -64,7 +75,35 @@ body {
 .nav-item {
   position: relative;
   padding: 0 15px;
+  text-align: center;
+  
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0%;
+  width: 150px;
+  background: linear-gradient(to right, tan, green);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+/*highlight items on hover */
+.dropdown-content a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background: rgb(142, 105, 58);
+
+}
+
 
 .nav-dropdown {
   display: inline-block;
@@ -76,7 +115,7 @@ body {
   position: absolute;
   top: 4;
   left: 0;
-  background-color: darkolivegreen;
+  background: linear-gradient(to right, tan, green);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;
@@ -110,7 +149,10 @@ body {
   }
 
   .nav-bar-menu-container svg {
-    font-size: rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 }
+
+
+

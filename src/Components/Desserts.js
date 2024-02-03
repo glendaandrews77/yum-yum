@@ -1,35 +1,49 @@
 import React from "react";
 import "./Desserts.css";
+import Footer from "./Footer";
 
 const Desserts = () => {
   return (
-    <div className="header-desserts-container">
-      <img src="/yum-yum-imgs/desserts-removebg-preview.png" alt="header-desserts-img1" />
-     
-    
-    <h1 className="desserts-h1">
-       Freshly Made Desserts
-    </h1>
-      <div className="salad-item">
-        <p>Double Chocolate Yummy Brownies</p>
-        <img src="/yum-yum-imgs/brownie-removebg-preview.png" alt="brownie" />
-        <p>Housemade Chocolatie Brownies.</p>
-        <p>$5.99</p>
-      </div>
-      <div className="salad-item">
-        <p>Heavenly Yellow Chocolate Cake</p>
-        <img src="/yum-yum-imgs/cakkkke-removebg-preview.png" alt="choc-cake" />
-        <p>Moist chocolate yellow cake.</p>
-        <p>$3.99</p>  
-      </div>
-      <div className="salad-item">
-        <p>Delish Caprese Salad</p>
-        <img src="/yum-yum-imgs/choc-cros-removebg-preview.png" alt="Crossiant" />
-        <p>Chocolate Gooey Crossiant.</p>
-        <p>$4.99</p>  
-      </div>
+    <div className="header-food-container">
+      <img src="/yum-yum-imgs/1-desserts-header.jpg" alt="desserts-header" />
+      <h2 className="title">Desserts</h2>
 
-   </div>
-  )
+      <div className="food-container">
+        <div className="food-item">
+          <img
+            src="/yum-yum-imgs/brownies-removebg-preview.png"
+            alt="brownie"
+          />
+          <p>Chocolate Yummy Brownies</p>
+          <p>$5.99</p>
+        </div>
+        <div className="food-item">
+          <img
+            src="/yum-yum-imgs/cakkkke-removebg-preview.png"
+            alt="choc-cake"
+          />
+          <p>Yellow Chocolate Cake</p>
+          <p>$3.99</p>
+        </div>
+        <div className="food-item">
+          <img
+            src="/yum-yum-imgs/choc-cros-removebg-preview.png"
+            alt="Crossiant"
+          />
+          <p>Chocolate Croissant</p>
+          <p>$4.99</p>
+        </div>
+        <div className="food-item">
+          <img
+            src="/yum-yum-imgs/chcolatechipcookie-removebg-preview.png"
+            alt="choc-chip"
+          />
+          <p>Chocolate Chip Cookies</p>
+          <p>$4.99</p>
+        </div>
+      </div>
+    </div>
+  );
 };
+
 export default Desserts;

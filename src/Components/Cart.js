@@ -1,18 +1,24 @@
-import React from "react";
+import { useContext } from 'react';
+import FoodContext from './FoodContext';
+import CartFood from './CartFood';
 import "./Cart.css";
 
-const Cart = () => {
+function Cart() {
+    const { cart } = useContext(FoodContext);
+
     return (
-    <div className="header-contact-container">
+        <div className="cart page">
+            <h1>Finished Sipping & Slurpping? Click Order Now!</h1>
+            <h4> You have {cart.length} items in the shopping cart</h4>
 
-        <h2>Contact Us</h2>
+            <div className="food-list">
+                {Cart.map((food) => <CartFood key={food._id} data={food} /> )}
+            </div>
+        </div>
+    );
+}
 
-
-
-
-    </div>    
-        )
-    };
 export default Cart;
+
 
 

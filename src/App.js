@@ -12,6 +12,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
 import Cart from "./Components/Cart";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
          </Routes>
       </Router>
+
+      <Footer />
     </div>
   );
 }

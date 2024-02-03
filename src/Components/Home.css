@@ -1,87 +1,185 @@
-/* Home.css */
-
-.home-container {
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 31, 31); 
+    font-family: 'Arial', sans-serif;
+  }
+  
+.home-container {   
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(41, 31, 31);
+    padding: 2rem;
     text-align: center;
-    padding: 0rem;
-    max-width: fit-content;
-    height: fit-content;
+}
+
+.welcome-text { 
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1;
+    background: linear-gradient(to right,rgb(233, 178, 107), #00FF00);
+    -webkit-background-clip: text;
+    color: transparent;
     
-    margin-top: 90px;
+}
+
+.home-container .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.organic-farming-container {
+    text-align: left;
+    color: rgb(166, 125, 71);
+    margin-left: 5px;
+    margin-top: -20px;    
+    flex: 1;
+}
+.organic-farming-container h2 {
+    margin-bottom: 30px;
+    color:green;
+}
+.organic-farming-container p {
+    margin-top: 20px; 
+    margin-right: 250px;
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    .hero-container {
+        flex-wrap: nowrap;
+    }
+    .main-img {
+        max-width: 50%;
+    }
+    .organic-farming-container p {
+        margin-right: 250px;
+    }
+}
+@media (min-width: 576px) {
+    .organic-farming-container p {
+        margin-right: 0;
+    }
+}
+@media (min-wdith: 992px) {
+    .main-img {
+        max-width: 30%;
+    }
+}
+.main-img {
+   flex: 1;
+}
+.main-img img {
+    border-radius: 25px;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left:0px;
+}
+.sub-of-day {
+    width: 250px;
+    border-radius: 15px;
+    color: green;
+    font-size: 85%;
+    padding: 1.5rem;
+    margin-left: 5px;
+   
+}
+.sub-of-day p {
+    color: wheat;
+    font-size: 25px;
 }
 
 .home-image-container {
     position: relative;
+    
 }
-
-.home-image-container img {
-    width: 100%; 
-    max-width: 70%;
-    height: auto;
+.home-text-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
 }
-
-.home-image-1-container {
-    width: 100%; 
-    height: 200px;
-    position: relative;
-}
-
-.home-image-1-container img {
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    padding-right: 10%;
-    padding-left: -15%;
-}
-
 .heading {
     text-align: center;
-    color: green;
+    color: tan;
     font-size: 2rem;
     text-align: end;
     margin: auto;
     padding: 25px;
     text-decoration: solid;
 }
-
 .primary-text {
-    text-align: end; /* Align text to the right */
+    text-align: end;
 }
-
-.below-header {
+.below-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.heading-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
-    text-align: end; /* Align text to the right */
-    padding: 2rem;
-    margin-top: 20px;
+    align-items: flex-end;
 }
 
-#fresh-ingredients {
+.order-now {
+    margin-left: 0px;
+}
+
+.secondary-button {
+    background: linear-gradient(to right, tan, green);
+    color: white;
+    padding: 10px 15px;
     font-size: 1.5rem;
-    margin-top: 30px;
-    text-align: end; /* Align text to the right */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+.secondary-button:hover {
+    background: linear-gradient(to right, green, tan);
 }
 
-/* Move text to the right */
-.home-text-section {
-    display: flex;
-    justify-content: flex-end; /* Align to the right */
-    align-items: center;
-    margin-top: 20px;
+.main-soup .info {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 250px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure it doesn't overlap with the image */
-.home-text-content {
-    max-width: 70%; /* Adjust as needed */
+  
+
+.pork-bbq h4 {
+    font-size: 1.rem;
+    color: wheat;
+    margin-top: 25px;
+}
+.sub-of-day img {
+    width: 88%;
+    height: auto;
+    margin-top: 15%;
+    border-radius: 100px;
+}
+.image-container {
+    margin-top: 685px;
+    background-color: rgb(41, 31, 31);
+}
+.rest-info {
+    background-color: rgb(41, 31, 31);
+    color: white;
+    padding: 20px; /* Fix the typo here */
 }
 
-/* Move image to navbar */
-.navbar-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+.footer {   
     width: 100%;
-    height: 200px;
-    z-index: -1; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
+

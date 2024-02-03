@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { BsCart2 } from "react-icons/bs";
+import { MdPhoneCallback } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./Navbar.css";
 import {
@@ -14,7 +15,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
+
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -26,8 +27,6 @@ const Navbar = () => {
   const menuOptions = [
     {
       text: "Salaoups",
-      // Add any link or use "#" for now
-      link: "/",
     },
     {
       text: "Home",
@@ -38,11 +37,11 @@ const Navbar = () => {
       text: "Menu",
       icon: <MdOutlineRestaurantMenu />,
       subMenu: [
-        { text: "Salads", link: "/salads" },
-        { text: "Soups", link: "/soups" },
-        { text: "Sandwiches", link: "/sandwiches" },
-        { text: "Dessert", link: "/desserts" },
-        { text: "Drinks", link: "/drinks" },
+        { text: "🥗Salads", link: "/salads" },
+        { text: "🥘Soups", link: "/soups" },
+        { text: "🥪Sandwiches", link: "/sandwiches" },
+        { text: "🍰Dessert", link: "/desserts" },
+        { text: "🥤Drinks", link: "/drinks" },
       ],
     },
     {
@@ -50,17 +49,19 @@ const Navbar = () => {
       icon: <PhoneRoundedIcon />,
       link: "/contact"
     },
+    
+   
     {
-      text: "About",
-      icon: <InfoIcon />,
-      link: "/about"
+      icon: <ShoppingCartRoundedIcon />,
+      link: "/cart" 
     },
     {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
-      link: "/about" 
+      text: "Phone: (757) 497-5621",
+      icon: <MdPhoneCallback />,
+      link: "#",
     },
   ];
+
 
   return (
     <nav>

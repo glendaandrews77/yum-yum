@@ -1,36 +1,32 @@
 import React from "react";
 import './Soups.css';
-
+import Footer from './Footer';
 
 const Soups = () => {
-    return (
-      <div className="header-soup-container">
-        <img src="/yum-yum-imgs/boynsoup-removebg-preview.png" alt="header-img" />
-        <h2>Soups</h2>
-        <div className="soups-item">
-          <p>Tomato Tamato Soup</p>
+  return (
+    <div className="header-food-container">
+      <img src="/yum-yum-imgs/soup-header.jpg" alt="header-img" />
+      <h2 className="title">Soups</h2>
+
+      <div className="food-container">
+        <div className="food-item">
           <img src="/yum-yum-imgs/tomato-s-removebg-preview.png" alt="Tomato-Soup" />
-          <p>Housemade Hot Tomato Soup</p>
-          <p>$15.95</p>
+          <p>Spicy Tomato Soup</p>
+          <p className="price">$15.95</p>
         </div>
-        <div className="soups-item">
-          <p>Delish Smoked Salmon Soup</p>
+        <div className="food-item">
           <img src="/yum-yum-imgs/smokedSalmonSoup-removebg-preview.png" alt="Salmon-soup" />
           <p>Slow cooked smoked salmon soup.</p>
-          <p>$12.99</p>  
+          <p className="price">$12.99</p>
         </div>
-        <div className="soups-item">
-          <p>Housemade Chicken Noodle Soup</p>
+        <div className="food-item spicy-chili">
           <img src="/yum-yum-imgs/chili-removebg-preview.png" alt="Chili" />
-          <p>Made with love chicken noodle soup. </p>
-          <p>$12.99</p>  
+          <p>Spicy Chili</p>
+          <p className="price">$12.99</p>
         </div>
-  
-     </div>
-    )
-  };
-
-
-
+      </div>
+    </div>
+  );
+};
 
 export default Soups;

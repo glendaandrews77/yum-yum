@@ -1,36 +1,34 @@
-// Sandwiches.js
-
 import React from "react";
 import './Sandwiches.css';
+import Footer from './Footer';
 
 const Sandwiches = () => {
   return (
-    <div className="header-sandwiches-container">
-      <h2>Sandwiches</h2>
-      <div className="header-img">
-        <img src="/yum-yum-imgs/sanwich-header-removebg-preview.png" alt="header-sanwich" />
-      </div>
+    <div className="header-food-container">
+        <img className src="/yum-yum-imgs/sandwich-header.jpg" alt="sandwich-header" />
+      <h2 className="title">Sandwiches</h2>
       
-
-      <div className="sandwiches-item">
-        <p>Turkey Cuban Sandwich</p>
-        <img src="/yum-yum-imgs/tcs-removebg-preview.png" alt="Turkey-cuban" />
-        <p>Description</p>
-        <p>$10.95</p>
-      </div>
-
-      <div className="sandwiches-item">
-        <p>Thick'ums Chicken n Cheese Sub</p>
-        <img src="/yum-yum-imgs/Thinkstock2-removebg-preview.png" alt="Chicken-sub" />
-        <p>Input description </p>
-        <p>$12.99</p>  
-      </div>
-
-      <div className="sandwiches-item">
-        <p>Delish Toasted Scrumpious BLT Sandwich </p>
-        <img src="/yum-yum-imgs/yum-yum-imgs/BLT-removebg-preview.png" alt="BLT-sandwich" />
-        <p>Input description </p>
-        <p>$12.99</p>  
+      <div className="food-container">
+        <div className="food-item">
+          <img src="/yum-yum-imgs/tcs-removebg-preview.png" alt="Turkey-cuban" />
+          <p>Turkey Cuban Panni</p>
+          <p>$10.95</p>
+        </div>
+        <div className="food-item">
+          <img src="/yum-yum-imgs/Thinkstock2-removebg-preview.png" alt="Chicken-sub" />
+          <p>Chicken & Cheese Sub</p>
+          <p>$12.99</p>  
+        </div>
+        <div className="food-item">
+          <img src="/yum-yum-imgs/BLT-removebg-preview.png" alt="BLT-sandwich" />
+          <p>Toasted BLT Sandwich</p>
+          <p>$12.99</p>
+        </div>
+        <div className="food-item">
+          <img src="/yum-yum-imgs/BLT-removebg-preview.png" alt="BLT-sandwich" />
+          <p>Toasted BLT Sandwich</p>
+          <p>$12.99</p>
+        </div>
       </div>
     </div>
   )
