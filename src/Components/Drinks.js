@@ -59,7 +59,34 @@ const Drinks = () => {
           <p>Flavorable Hot Teas</p>
           <p>$2.95</p>
         </div>
+        
+        <div className="food-item">
+          <img src="/yum-yum-imgs/sparkling-removebg-preview.png" alt="tea" />
+          <p>Sparkling Water</p>
+          <p>$3.95</p>
+        </div>
+        
+        <div className="food-item">
+          <img src="/yum-yum-imgs/md-removebg-preview.png" alt="tea" />
+          <p>20 oz Mountain Dew</p>
+          <p>$2.95</p>
+        </div>
+        
+        <div className="food-item">
+          <img src="/yum-yum-imgs/v-8-ene-removebg-preview.png" alt="V8-OP" />
+          <p>V8 Orange-Pineapple Energy Drink</p>
+          <p>$2.95</p>
+        </div>
+        
+        <div className="food-item">
+          <img src="/yum-yum-imgs/redbull-removebg-preview.png" alt="Redbull" />
+          <p>Redbull</p>
+          <p>$2.95</p>
+        </div>
+
+        {/* Repeat the above food-item structure for additional drinks if needed */}
       </div>
+
     </div>
   );
 };
