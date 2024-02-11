@@ -60,12 +60,7 @@ const Soups = () => {
           <p>Spicy Ramen</p>
           <p className="price">$13.99</p>
         </div>
-        <div className="food-item spicy-ramen">
-          <img src="/yum-yum-imgs/shroom-soup-removebg-preview.png" alt="mushroom-soup" />
-          <p>Mushroom Soupn</p>
-          <p className="price">$13.99</p>
-        </div>
-        
+       
       </div>
     </div>
   );

@@ -119,15 +119,7 @@ const Desserts = () => {
           <p>Powder Patries</p>
           <p>$6.99</p>
         </div>
-        <div className="food-item">
-          <img
-            src="/yum-yum-imgs/keylime-fudge
-            -removebg-preview.png"
-            alt="keylime fudge"
-          />
-          <p>Keylime Fudge</p>
-          <p>$5.99</p>
-        </div>
+       
         <div className="food-item">
           <img
             src="/yum-yum-imgs/ras-fudge-removebg-preview.png"

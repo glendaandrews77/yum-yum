@@ -1,7 +1,7 @@
 .header-contact-container {
     text-align: center;
     background-color: rgb(41, 31, 31);
-    padding: 20px;
+    padding: 25px;
     color: white; 
 }
 
@@ -18,7 +18,7 @@ h2 {
 .tossed-header-img img {
     max-width: 100%;
     height: auto;
-  margin-top:-75px;
+  margin-top:-150px;
 }
 p{
     margin-top: 30px;

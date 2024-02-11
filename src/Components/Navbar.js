@@ -95,7 +95,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="nav-bar-menu-container">
-        <RxHamburgerMenu onClick={() => setOpenMenu(true)} />
+        <RxHamburgerMenu className="handburger-menu" onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer
         open={openMenu}
